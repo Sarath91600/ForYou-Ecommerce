@@ -6,7 +6,7 @@ import Login from './components/Login'
 import Reports from './pages/Reports'
 import Orders from './pages/Orders'
 import Add from './pages/Add'
-import List from './pages/list'
+import List from './pages/List'
 import {  ToastContainer } from 'react-toastify'; 
 import 'react-toastify/dist/ReactToastify.css'; 
 
