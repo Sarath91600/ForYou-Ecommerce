@@ -124,6 +124,13 @@ const Login = () => {
   //   if (token) navigate('/');
   // }, [token]);
 
+  useEffect(() => {
+  const storedToken = localStorage.getItem('token');
+  if (storedToken) {
+    navigate('/');
+  }
+}, []);
+
 const toggleFormState = (state) => {
     setCurrentState(state);
     setIsOtpSent(false);

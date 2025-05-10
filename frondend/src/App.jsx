@@ -15,6 +15,7 @@ import Footer from './components/Footer'
 import SearchBar from './components/SearchBar'
 import MyProfile from './pages/MyProfile'
 import ForgotPassword from './pages/ForgotPassword'
+import NotFound from './components/NotFound';
 import GoogleRedirect from './components/GoogleRedirect'
 import { ToastContainer, toast } from 'react-toastify';
 
@@ -40,6 +41,8 @@ const App = () => {
       <Route path='/orders' element={<Orders/>} />
       <Route path="/profile" element={<MyProfile />} />
       <Route path="/forgot-password" element={<ForgotPassword />} />
+       <Route path="*" element={<NotFound />} />
+      
       </Routes>
       </main>
       <Footer />
