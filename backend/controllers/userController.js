@@ -197,7 +197,7 @@ const googleAuthCallback = async (req, res) => {
     expiresIn: '7d',
   });
 
- res.redirect(`http://localhost:5173/googleRedirect?token=${token}&name=${req.user.name}&email=${req.user.email}`);
+ res.redirect(`https://for-you-ecommerce-frontend.vercel.app/googleRedirect?token=${token}&name=${req.user.name}&email=${req.user.email}`);
 };
 
 
