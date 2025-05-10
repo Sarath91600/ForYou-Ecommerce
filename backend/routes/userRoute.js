@@ -1,7 +1,7 @@
 import express from "express"
 import passport from 'passport';
 import { loginUser,registerUser,adminLogin,sendOtp,verifyOtp,forgotPasswordCheckEmail,forgotPasswordReset,forgotPasswordVerifyOtp,googleAuthCallback,googleAuthRedirect } from "../controllers/userController.js"
-//import authUser from "../middleware/auth.js";
+
 import jwt from 'jsonwebtoken';
 
 const userRouter=express.Router();
