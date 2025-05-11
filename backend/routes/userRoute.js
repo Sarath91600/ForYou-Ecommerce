@@ -22,7 +22,7 @@ userRouter.post('/verify-otp', forgotPasswordVerifyOtp);
 userRouter.post('/reset-password', forgotPasswordReset);
 
 
-// Google Authentication Routes
+
 
 
 // Google Authentication Route
