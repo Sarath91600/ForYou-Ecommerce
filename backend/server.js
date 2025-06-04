@@ -22,7 +22,10 @@ connectCloudinary()
 // middlewares
 
 app.use(express.json())
-app.use(cors())
+app.use(cors({
+  origin: "https://for-you-ecommerce-frontend.vercel.app",
+  credentials: true
+}));
 
 app.use(session({
     secret:  process.env.SESSION_SECRET, 
